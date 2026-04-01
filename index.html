@@ -1,0 +1,1014 @@
+﻿<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ශ්‍රී සුභ මංගල්‍යයි | නිරෝෂා 💍💍 සමීර</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Sinhala:wght@400;500;600;700&family=Noto+Serif+Sinhala:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fff8e7;
+      --panel: rgba(255, 252, 245, 0.82);
+      --panel-strong: rgba(255, 252, 245, 0.94);
+      --gold: #d4af37;
+      --gold-soft: #f0d57e;
+      --maroon: #800000;
+      --brown: #6b4a2f;
+      --ink: #3f2c1f;
+      --rose: #e486a6;
+      --rose-deep: #b54f78;
+      --shadow: 0 18px 40px rgba(68, 45, 30, 0.15);
+      --rad-lg: 28px;
+      --rad-md: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Anek Sinhala", sans-serif;
+      color: var(--ink);
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        radial-gradient(42rem 34rem at 8% 2%, rgba(212, 175, 55, 0.14), transparent 65%),
+        radial-gradient(35rem 28rem at 94% 84%, rgba(128, 0, 0, 0.11), transparent 68%),
+        radial-gradient(28rem 18rem at 78% 10%, rgba(228, 134, 166, 0.1), transparent 70%),
+        var(--bg);
+      position: relative;
+    }
+
+    body.intro-active {
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.28;
+      background-image:
+        radial-gradient(circle at 25px 25px, rgba(212, 175, 55, 0.18) 2px, transparent 2.5px),
+        radial-gradient(circle at 8px 8px, rgba(128, 0, 0, 0.08) 1.2px, transparent 1.8px),
+        conic-gradient(from 45deg at 50% 50%, rgba(212, 175, 55, 0.1) 0deg 18deg, transparent 18deg 90deg, rgba(128, 0, 0, 0.06) 90deg 108deg, transparent 108deg 180deg, rgba(212, 175, 55, 0.1) 180deg 198deg, transparent 198deg 270deg, rgba(128, 0, 0, 0.06) 270deg 288deg, transparent 288deg 360deg);
+      background-size: 70px 70px, 70px 70px, 140px 140px;
+      background-position: 0 0, 16px 16px, 0 0;
+      mask-image: radial-gradient(circle at center, rgba(0,0,0,0.9), rgba(0,0,0,0.35) 70%, rgba(0,0,0,0.12));
+      animation: kolamFloat 18s ease-in-out infinite alternate;
+    }
+
+    @keyframes kolamFloat {
+      from { transform: translateY(0); }
+      to { transform: translateY(-8px); }
+    }
+
+    .texture {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      background-image:
+        linear-gradient(120deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.03) 30%, rgba(212, 175, 55, 0.04) 100%),
+        repeating-radial-gradient(circle at 0 0, rgba(140, 112, 83, 0.03), rgba(140, 112, 83, 0.03) 1px, transparent 1px, transparent 8px);
+      animation: drift 14s ease-in-out infinite alternate;
+    }
+
+    @keyframes drift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    .roses {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    .petal {
+      position: absolute;
+      top: -12vh;
+      width: 14px;
+      height: 20px;
+      border-radius: 65% 35% 62% 38%;
+      background: linear-gradient(160deg, rgba(255, 172, 199, 0.88), rgba(191, 77, 121, 0.45));
+      opacity: 0.55;
+      animation: fall linear infinite, sway 4s ease-in-out infinite;
+      filter: blur(0.15px);
+    }
+
+    @keyframes fall {
+      0% { transform: translate3d(0, 0, 0) rotate(0deg); opacity: 0; }
+      10% { opacity: 0.55; }
+      100% { transform: translate3d(44px, 115vh, 0) rotate(330deg); opacity: 0; }
+    }
+
+    @keyframes sway {
+      0%, 100% { margin-left: 0; }
+      50% { margin-left: 10px; }
+    }
+
+    .frame {
+      position: fixed;
+      inset: 14px;
+      border-radius: 26px;
+      border: 2px solid rgba(212, 175, 55, 0.45);
+      box-shadow: inset 0 0 0 8px rgba(255, 251, 236, 0.64), 0 0 0 1px rgba(128, 0, 0, 0.1);
+      pointer-events: none;
+      z-index: 3;
+      overflow: hidden;
+    }
+
+    .intro-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background:
+        radial-gradient(48rem 34rem at 50% 10%, rgba(255, 250, 235, 0.98), rgba(244, 230, 194, 0.95)),
+        linear-gradient(135deg, rgba(128, 0, 0, 0.08), rgba(212, 175, 55, 0.12));
+      transition: opacity 700ms ease, visibility 700ms ease;
+    }
+
+    .intro-overlay::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(0deg, rgba(255, 248, 231, 0.78), rgba(255, 248, 231, 0.78)),
+        url("wedding.png") center 58% / 320px auto no-repeat;
+      opacity: 0.32;
+      filter: sepia(0.35) saturate(0.75);
+    }
+
+    .intro-roses {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .intro-rose {
+      position: absolute;
+      width: 16px;
+      height: 22px;
+      border-radius: 60% 40% 64% 36%;
+      background: linear-gradient(165deg, rgba(255, 177, 204, 0.85), rgba(183, 62, 105, 0.5));
+      opacity: 0.52;
+      filter: blur(0.2px);
+      animation: introRoseFall linear infinite, introRoseSway 4s ease-in-out infinite;
+    }
+
+    @keyframes introRoseFall {
+      0% { transform: translate3d(0, -14vh, 0) rotate(0deg); opacity: 0; }
+      12% { opacity: 0.55; }
+      100% { transform: translate3d(36px, 108vh, 0) rotate(330deg); opacity: 0; }
+    }
+
+    @keyframes introRoseSway {
+      0%, 100% { margin-left: 0; }
+      50% { margin-left: 12px; }
+    }
+
+    .intro-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .envelope-scene {
+      width: min(620px, 95vw);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .intro-title {
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      color: #6f1f1f;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      margin-bottom: 18px;
+      letter-spacing: 0.01em;
+      text-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+    }
+
+    .intro-stars {
+      margin-bottom: 8px;
+      color: rgba(122, 91, 54, 0.65);
+      letter-spacing: 0.5em;
+      font-size: 0.92rem;
+    }
+
+    .envelope {
+      position: relative;
+      margin: 0 auto;
+      width: min(560px, 92vw);
+      height: 340px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #fffaf0, #f8ebcc);
+      border: 1px solid rgba(210, 171, 63, 0.72);
+      box-shadow: 0 25px 45px rgba(76, 50, 33, 0.18);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 360ms ease, box-shadow 360ms ease;
+      animation: envelopeFloat 4.8s ease-in-out infinite;
+    }
+
+    .envelope:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 30px 50px rgba(76, 50, 33, 0.22);
+    }
+
+    @keyframes envelopeFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .envelope-flap {
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 56%;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      background:
+        linear-gradient(180deg, #f6dfab, #dfba65),
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 0 8px, transparent 8px 16px);
+      transform-origin: top center;
+      transition: transform 900ms cubic-bezier(.2,.75,.2,1);
+      z-index: 3;
+      box-shadow: inset 0 -8px 14px rgba(132, 94, 39, 0.18);
+      overflow: hidden;
+    }
+
+    .envelope-flap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(112deg, transparent 15%, rgba(255, 238, 194, 0.42) 46%, transparent 72%);
+      transform: translateX(-130%);
+      animation: flapShine 5.8s ease-in-out infinite;
+    }
+
+    @keyframes flapShine {
+      0%, 20% { transform: translateX(-130%); }
+      52%, 100% { transform: translateX(130%); }
+    }
+
+    .envelope-body {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(145deg, rgba(128, 0, 0, 0.025), transparent 42%),
+        linear-gradient(0deg, #fff8e3, #f8e7c2);
+      z-index: 1;
+    }
+
+    .envelope-seal {
+      position: absolute;
+      left: 50%;
+      top: 52%;
+      transform: translate(-50%, -50%);
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      z-index: 4;
+      display: grid;
+      place-items: center;
+      font-size: 1rem;
+      color: #ffe9d6;
+      background: radial-gradient(circle at 30% 28%, #b84545, #7a1f1f 65%);
+      border: 2px solid rgba(255, 221, 194, 0.6);
+      box-shadow: 0 6px 12px rgba(96, 24, 24, 0.32);
+      transition: opacity 420ms ease;
+      animation: sealPulse 2.4s ease-in-out infinite;
+    }
+
+    @keyframes sealPulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.06); }
+    }
+
+    .envelope-letter {
+      position: absolute;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      width: 90%;
+      min-height: 206px;
+      border-radius: 18px;
+      border: 1px solid rgba(212, 175, 55, 0.46);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.93), rgba(255, 252, 244, 0.96)),
+        repeating-linear-gradient(0deg, transparent 0 31px, rgba(145, 103, 69, 0.05) 31px 32px);
+      box-shadow: 0 14px 24px rgba(101, 74, 54, 0.14);
+      padding: 34px 16px 14px;
+      display: grid;
+      align-content: start;
+      justify-items: center;
+      z-index: 2;
+      transition: transform 900ms cubic-bezier(.2,.75,.2,1);
+      animation: letterGlow 3.8s ease-in-out infinite;
+    }
+
+    @keyframes letterGlow {
+      0%, 100% { box-shadow: 0 14px 24px rgba(101, 74, 54, 0.12); }
+      50% { box-shadow: 0 18px 28px rgba(101, 74, 54, 0.19); }
+    }
+
+    .intro-names {
+      border: none;
+      background: transparent;
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      color: #774f2d;
+      font-size: clamp(1.7rem, 5.2vw, 2.6rem);
+      font-weight: 700;
+      cursor: pointer;
+      text-shadow: 0 0 14px rgba(212, 175, 55, 0.22);
+      transition: transform 260ms ease, color 260ms ease, letter-spacing 260ms ease;
+      margin-top: 58px;
+    }
+
+    .intro-names:hover {
+      transform: translateY(-2px);
+      color: #8c2323;
+      letter-spacing: 0.01em;
+    }
+
+    body.intro-opened .envelope-flap {
+      transform: rotateX(170deg);
+    }
+
+    body.intro-opened .envelope-seal {
+      opacity: 0;
+      animation: none;
+    }
+
+    body.intro-opened .envelope-letter {
+      transform: translateX(-50%) translateY(-42px);
+      animation: none;
+    }
+
+    body.intro-opened .envelope {
+      transform: scale(1.02);
+      animation: none;
+    }
+
+    body.intro-opened .envelope-scene {
+      animation: sceneFadeUp 1.05s ease forwards;
+    }
+
+    @keyframes sceneFadeUp {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.04) translateY(-8px); opacity: 0.96; }
+    }
+
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, transparent 22%, rgba(255, 244, 205, 0.35) 45%, transparent 72%);
+      transform: translateX(-140%);
+      animation: shimmer 8s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 20% { transform: translateX(-140%); }
+      42%, 100% { transform: translateX(160%); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 4;
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+      padding: 44px 0 72px;
+    }
+
+    section {
+      position: relative;
+      background: var(--panel);
+      border-radius: var(--rad-lg);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      box-shadow: var(--shadow);
+      padding: 30px 28px;
+      margin-bottom: 22px;
+      opacity: 0;
+      transform: translateY(30px) scale(0.985);
+      transition: transform 900ms cubic-bezier(.2,.75,.2,1), opacity 900ms ease;
+      backdrop-filter: blur(2px);
+      overflow: hidden;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(200px 60px at 0% 0%, rgba(212, 175, 55, 0.08), transparent 70%),
+        radial-gradient(200px 80px at 100% 100%, rgba(128, 0, 0, 0.08), transparent 70%);
+    }
+
+    section.reveal {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 36px;
+      padding-bottom: 34px;
+    }
+
+    .hero::after,
+    .hero::before {
+      content: "✦";
+      position: absolute;
+      top: 24px;
+      font-size: 2.2rem;
+      color: rgba(212, 175, 55, 0.56);
+      animation: twinkle 3.1s ease-in-out infinite;
+    }
+
+    .hero::before { left: 26px; }
+    .hero::after { right: 26px; animation-delay: 1s; }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.16); }
+    }
+
+    .hero-ornament {
+      font-size: 1.35rem;
+      letter-spacing: 0.3em;
+      color: rgba(128, 0, 0, 0.7);
+      margin-bottom: 8px;
+      animation: fadePulse 4s ease-in-out infinite;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    .title {
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      font-size: clamp(1.9rem, 4.8vw, 3rem);
+      font-weight: 700;
+      margin-top: 14px;
+      letter-spacing: 0.03em;
+      background: linear-gradient(90deg, #6e1515, #bb5d30, #6e1515);
+      background-size: 220% auto;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-shadow: 0 0 14px rgba(212, 175, 55, 0.24);
+      animation: titleIn 1.6s ease both, sweep 8s linear infinite;
+    }
+
+    @keyframes titleIn {
+      from { opacity: 0; transform: translateY(20px); letter-spacing: 0.2em; }
+      to { opacity: 1; transform: translateY(0); letter-spacing: 0.03em; }
+    }
+
+    @keyframes sweep {
+      from { background-position: 0% center; }
+      to { background-position: 220% center; }
+    }
+
+    .couple {
+      margin-top: 10px;
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      font-size: clamp(2.1rem, 6.6vw, 4.2rem);
+      color: var(--brown);
+      text-shadow: 0 2px 12px rgba(212, 175, 55, 0.28);
+      animation: floatText 3.8s ease-in-out infinite;
+    }
+
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .divider {
+      width: min(450px, 88%);
+      border: none;
+      height: 2px;
+      margin: 18px auto 0;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      animation: pulseLine 3.8s ease-in-out infinite;
+    }
+
+    @keyframes pulseLine {
+      0%, 100% { transform: scaleX(0.95); opacity: 0.6; }
+      50% { transform: scaleX(1.04); opacity: 1; }
+    }
+
+    .illustration-wrap {
+      width: min(430px, 92%);
+      margin: 0 auto;
+      padding: 10px;
+      border-radius: 24px;
+      border: 1px solid rgba(212, 175, 55, 0.45);
+      background: radial-gradient(circle at 30% 20%, #fffdf2, #f4e4be);
+      box-shadow: 0 16px 28px rgba(98, 73, 54, 0.2);
+      animation: floatImage 4.8s ease-in-out infinite;
+    }
+
+    @keyframes floatImage {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .couple-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 18px;
+      filter: drop-shadow(0 8px 14px rgba(84, 58, 39, 0.2));
+    }
+
+    .grid-2, .grid-3 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+    .card {
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: var(--rad-md);
+      padding: 20px;
+      text-align: center;
+      transition: transform 280ms ease, box-shadow 280ms ease, border-color 280ms ease;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
+      box-shadow: 0 14px 24px rgba(90, 64, 42, 0.18);
+      border-color: rgba(128, 0, 0, 0.34);
+    }
+
+    .card h3 {
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      color: var(--maroon);
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+      animation: fadePulse 4s ease-in-out infinite;
+    }
+
+    @keyframes fadePulse {
+      0%, 100% { opacity: 0.78; }
+      50% { opacity: 1; }
+    }
+
+    .center-text {
+      text-align: center;
+      font-size: clamp(1.08rem, 2.3vw, 1.35rem);
+      color: var(--brown);
+      font-weight: 500;
+      animation: textWave 5s ease-in-out infinite;
+    }
+
+    @keyframes textWave {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+
+    .map-section { background: var(--panel-strong); }
+
+    .map-title {
+      text-align: left;
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      font-size: clamp(1.25rem, 2.8vw, 1.7rem);
+      color: #38271b;
+      margin-bottom: 12px;
+    }
+
+    .map-panel {
+      background: #ebebeb;
+      border-radius: 18px;
+      padding: 14px;
+      border: 1px solid rgba(90, 90, 90, 0.23);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    .map-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(84, 84, 84, 0.26);
+      box-shadow: 0 10px 18px rgba(72, 58, 46, 0.14);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      display: block;
+    }
+
+    .countdown-section {
+      background: var(--panel-strong);
+      padding: 24px 24px 22px;
+    }
+
+    .countdown-date {
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      color: #7a1d1d;
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .count-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .count-card {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(212, 175, 55, 0.55);
+      border-radius: 18px;
+      padding: 14px 12px 12px;
+      min-height: 108px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 8px 16px rgba(88, 66, 48, 0.08);
+      transition: transform 250ms ease, box-shadow 250ms ease;
+    }
+
+    .count-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 22px rgba(88, 66, 48, 0.16);
+    }
+
+    .count-value {
+      font-family: "Noto Serif Sinhala", "Anek Sinhala", serif;
+      color: #761919;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .count-label {
+      color: #7b5a3b;
+      font-size: 1rem;
+    }
+
+    .decorative {
+      text-align: center;
+      padding-top: 34px;
+      padding-bottom: 34px;
+      overflow: hidden;
+    }
+
+    .decorative::before,
+    .decorative::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 2px dashed rgba(212, 175, 55, 0.33);
+      animation: rotateCircle 18s linear infinite;
+      transform: translateY(-50%);
+    }
+
+    .decorative::before { left: -128px; }
+    .decorative::after { right: -128px; animation-direction: reverse; }
+
+    @keyframes rotateCircle {
+      from { transform: translateY(-50%) rotate(0deg); }
+      to { transform: translateY(-50%) rotate(360deg); }
+    }
+
+    .ring-icon {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 1.9rem;
+      border: 2px solid var(--gold);
+      background: radial-gradient(circle at 40% 35%, #fffbe8, #f5e6bf);
+      color: var(--maroon);
+      box-shadow: 0 0 24px rgba(212, 175, 55, 0.29);
+      animation: ringBeat 2.8s ease-in-out infinite;
+    }
+
+    @keyframes ringBeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.09); }
+    }
+
+    .mandala {
+      color: var(--gold);
+      font-size: clamp(1.3rem, 3vw, 1.85rem);
+      letter-spacing: 0.15em;
+      animation: fadePulse 4s ease-in-out infinite;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 1.12rem;
+      font-weight: 500;
+      color: var(--brown);
+      animation: fadePulse 5s ease-in-out infinite;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 0.95rem;
+      color: #8f6f51;
+    }
+
+    .music-btn {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 10;
+      border: 1px solid rgba(128, 0, 0, 0.23);
+      background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+      color: #5b3f24;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-family: "Anek Sinhala", sans-serif;
+      font-size: 0.92rem;
+      cursor: pointer;
+      box-shadow: 0 10px 18px rgba(212, 175, 55, 0.28);
+      transition: transform 220ms ease, box-shadow 220ms ease;
+    }
+
+    .music-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 20px rgba(212, 175, 55, 0.36);
+    }
+
+    @media (max-width: 920px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .count-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .container { padding-top: 28px; }
+      .frame { inset: 10px; }
+      .map-title { text-align: center; }
+      .map-wrap iframe { height: 300px; }
+      .music-btn { right: 12px; bottom: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { animation: none !important; transition: none !important; }
+      body::before { animation: none !important; }
+      .intro-roses { display: none; }
+    }
+  </style>
+</head>
+  <body class="intro-active">
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-roses" aria-hidden="true">
+      <span class="intro-rose" style="left: 6%; animation-duration: 10.5s; animation-delay: 0s;"></span>
+      <span class="intro-rose" style="left: 16%; animation-duration: 13s; animation-delay: 1.6s;"></span>
+      <span class="intro-rose" style="left: 27%; animation-duration: 11.2s; animation-delay: 0.7s;"></span>
+      <span class="intro-rose" style="left: 38%; animation-duration: 14.2s; animation-delay: 2.8s;"></span>
+      <span class="intro-rose" style="left: 49%; animation-duration: 12.5s; animation-delay: 1.1s;"></span>
+      <span class="intro-rose" style="left: 61%; animation-duration: 15s; animation-delay: 2.2s;"></span>
+      <span class="intro-rose" style="left: 73%; animation-duration: 11.8s; animation-delay: 0.4s;"></span>
+      <span class="intro-rose" style="left: 84%; animation-duration: 13.8s; animation-delay: 1.9s;"></span>
+      <span class="intro-rose" style="left: 93%; animation-duration: 10.8s; animation-delay: 2.6s;"></span>
+    </div>
+    <div class="envelope-scene">
+      <div class="intro-stars">✧ ✧ ✧ ✧ ✧</div>
+      <h2 class="intro-title">සාදර ආරාධනය</h2>
+      <div class="envelope" id="introEnvelope" role="button" tabindex="0" aria-label="Open wedding invitation">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+        <div class="envelope-seal" aria-hidden="true">❁</div>
+        <div class="envelope-letter">
+          <div class="intro-names">නිරෝෂා සහ සමීර</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="texture"></div>
+  <div class="roses" aria-hidden="true">
+    <span class="petal" style="left: 8%; animation-duration: 12s; animation-delay: 0s;"></span>
+    <span class="petal" style="left: 16%; animation-duration: 15s; animation-delay: 2s;"></span>
+    <span class="petal" style="left: 24%; animation-duration: 11s; animation-delay: 0.8s;"></span>
+    <span class="petal" style="left: 32%; animation-duration: 17s; animation-delay: 3.2s;"></span>
+    <span class="petal" style="left: 42%; animation-duration: 14s; animation-delay: 1.4s;"></span>
+    <span class="petal" style="left: 52%; animation-duration: 16s; animation-delay: 2.6s;"></span>
+    <span class="petal" style="left: 62%; animation-duration: 13s; animation-delay: 1.8s;"></span>
+    <span class="petal" style="left: 72%; animation-duration: 18s; animation-delay: 4.2s;"></span>
+    <span class="petal" style="left: 82%; animation-duration: 12.5s; animation-delay: 0.5s;"></span>
+    <span class="petal" style="left: 90%; animation-duration: 15.5s; animation-delay: 3.9s;"></span>
+  </div>
+  <div class="frame"></div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-ornament">❁ ❈ ❁ ❈ ❁</div>
+      <div class="illustration-wrap">
+        <img class="couple-img" src="wedding.png" alt="Sinhala traditional wedding couple" />
+      </div>
+      <h1 class="title">ශ්‍රී සුභ මංගල්‍යයි</h1>
+      <p class="couple">නිරෝෂා සහ සමීර</p>
+      <hr class="divider" />
+    </section>
+
+    <section>
+      <div class="grid-2">
+        <article class="card">
+          <h3>පවුල - වම් පාර්ශවය</h3>
+          <p>සිරිපති නන්දසිරි මහතාගේ<br />සහ<br />සමන්ති රංජිනී මහත්මියගේ<br />අදරණීය පුතු<br />නිරෝෂා</p>
+        </article>
+        <article class="card">
+          <h3>පවුල - දකුණු පාර්ශවය</h3>
+          <p>චන්ද්‍රසිරි විජේසුන්දර මහතාගේ<br />සහ<br />කුමාරි මල්ලිකා මහත්මියගේ<br />අදරණීය දියණිය<br />සමීර</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <p class="center-text">අපගේ විවාහ මංගල්‍ය උත්සවයට<br />ඔබගේ පැමිණීම අපට මහත් සතුටකි</p>
+    </section>
+
+    <section>
+      <div class="grid-3">
+        <article class="card">
+          <h3>විවාහ තොරතුරු</h3>
+          <p>වෙනස් දින: 2026 මැයි 20<br />වේලාව: පෙ.ව 10.30</p>
+        </article>
+        <article class="card">
+          <h3>ස්ථානය</h3>
+          <p>Hilton Colombo</p>
+        </article>
+        <article class="card">
+          <h3>සංග්‍රහ වේලාව</h3>
+          <p>ආහාරය: ප.ව 1.00 සිට<br />සංග්‍රහය: ප.ව 4.30 දක්වා</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <h3 class="countdown-date">2026 මැයි 20</h3>
+      <div class="count-grid">
+        <article class="count-card">
+          <div class="count-value" id="days">00</div>
+          <div class="count-label">දින</div>
+        </article>
+        <article class="count-card">
+          <div class="count-value" id="hours">00</div>
+          <div class="count-label">පැය</div>
+        </article>
+        <article class="count-card">
+          <div class="count-value" id="minutes">00</div>
+          <div class="count-label">මිනිත්තු</div>
+        </article>
+        <article class="count-card">
+          <div class="count-value" id="seconds">00</div>
+          <div class="count-label">තත්පර</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h3 class="map-title">ස්ථාන සිතියම</h3>
+      <div class="map-panel">
+        <div class="map-wrap">
+          <iframe title="Wedding location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Hilton+Colombo%2C6.9325497%2C79.8447402&z=16&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="decorative">
+      <div class="ring-icon" aria-hidden="true">💍💍</div>
+      <div class="mandala">❁ ❈ ❁ ❈ ❁</div>
+    </section>
+
+    <section class="note">ඔබගේ පැමිණීම කාරුණිකව දන්වන්න</section>
+
+    <footer>ඔබගේ ආශීර්වාදය අපට වටිනාම දායකත්වයකි</footer>
+  </main>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_14f3f5483f.mp3?filename=sitar-ambient-124829.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button class="music-btn" id="musicToggle" type="button" aria-label="Toggle background music">සංගීතය ▶</button>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const cards = document.querySelectorAll(".card");
+    const daysEl = document.getElementById("days");
+    const hoursEl = document.getElementById("hours");
+    const minutesEl = document.getElementById("minutes");
+    const secondsEl = document.getElementById("seconds");
+    const music = document.getElementById("bgMusic");
+    const toggle = document.getElementById("musicToggle");
+    const introOverlay = document.getElementById("introOverlay");
+    const introEnvelope = document.getElementById("introEnvelope");
+    let playing = false;
+    let introDone = false;
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18 });
+
+    sections.forEach((section, index) => {
+      section.style.transitionDelay = `${index * 95}ms`;
+      io.observe(section);
+    });
+
+    cards.forEach((card) => {
+      card.addEventListener("mousemove", (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width;
+        const y = (e.clientY - r.top) / r.height;
+        const ry = (x - 0.5) * 8;
+        const rx = (0.5 - y) * 8;
+        card.style.transform = `translateY(-5px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+    });
+
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function updateCountdown() {
+      const target = new Date("2026-05-20T10:30:00+05:30").getTime();
+      const now = Date.now();
+      const diff = Math.max(0, target - now);
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      daysEl.textContent = pad(days);
+      hoursEl.textContent = pad(hours);
+      minutesEl.textContent = pad(minutes);
+      secondsEl.textContent = pad(seconds);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    function enterWebsite() {
+      if (introDone) return;
+      introDone = true;
+      document.body.classList.add("intro-opened");
+      setTimeout(() => {
+        introOverlay.classList.add("hidden");
+        document.body.classList.remove("intro-active");
+      }, 1050);
+    }
+
+    introEnvelope.addEventListener("click", enterWebsite);
+    introEnvelope.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        enterWebsite();
+      }
+    });
+
+    async function toggleMusic() {
+      try {
+        if (!playing) {
+          await music.play();
+          toggle.textContent = "සංගීතය ❚❚";
+          playing = true;
+        } else {
+          music.pause();
+          toggle.textContent = "සංගීතය ▶";
+          playing = false;
+        }
+      } catch (_) {
+        toggle.textContent = "සංගීතය ක්‍රියාත්මක නොවීය";
+      }
+    }
+
+    toggle.addEventListener("click", toggleMusic);
+  </script>
+</body>
+</html>
+
